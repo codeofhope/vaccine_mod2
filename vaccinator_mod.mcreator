@@ -30,7 +30,7 @@
   "language_map": {
     "en_us": {
       "item.vaccinator_mod.needle": "Needle",
-      "item.vaccinator_mod.antivirus_pill": "Antivirus Pill",
+      "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
       "itemGroup.tabvaccinated": "Vaccinator"
     }
   },
