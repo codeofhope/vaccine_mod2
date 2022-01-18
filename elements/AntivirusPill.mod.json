@@ -1,0 +1,28 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "pill",
+    "customModelName": "Normal",
+    "name": "Antivirus Pill",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Get yourself a pill."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Vaccinated"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatingSpeed": 80,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}
