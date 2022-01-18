@@ -11,6 +11,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.item.Item;
 
 import net.mcreator.vaccinatormod.item.NeedleItem;
+import net.mcreator.vaccinatormod.item.AntivirusPillItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 public class VaccinatorModModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
 	public static final Item NEEDLE = register(new NeedleItem());
+	public static final Item ANTIVIRUS_PILL = register(new AntivirusPillItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

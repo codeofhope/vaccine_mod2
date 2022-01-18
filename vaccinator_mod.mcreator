@@ -31,6 +31,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "AntivirusPill",
+      "type": "food",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antivirus_pill"
     }
   ],
   "variable_elements": [],
@@ -38,6 +46,7 @@
   "language_map": {
     "en_us": {
       "item.vaccinator_mod.needle": "Needle",
+      "item.vaccinator_mod.antivirus_pill": "Antivirus Pill",
       "itemGroup.tabvaccinated": "Vaccinator"
     }
   },
