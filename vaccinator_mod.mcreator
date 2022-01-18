@@ -17,6 +17,22 @@
       "registry_name": "needle"
     },
     {
+      "name": "NeedleRightClicked",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "needle_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
       "name": "AntivirusPill",
       "type": "food",
       "sortid": 3,
