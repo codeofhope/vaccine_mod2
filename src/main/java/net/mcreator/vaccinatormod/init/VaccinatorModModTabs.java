@@ -7,7 +7,6 @@ package net.mcreator.vaccinatormod.init;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 
@@ -18,7 +17,7 @@ public class VaccinatorModModTabs {
 		TAB_VACCINATED = new CreativeModeTab("tabvaccinated") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(Items.ARROW);
+				return new ItemStack(VaccinatorModModItems.NEEDLE);
 			}
 
 			@OnlyIn(Dist.CLIENT)
