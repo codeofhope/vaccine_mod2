@@ -7,12 +7,21 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "vaccinated"
+    },
+    {
+      "name": "Needle",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "needle"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.vaccinator_mod.needle": "Needle",
       "itemGroup.tabvaccinated": "Vaccinator"
     }
   },
