@@ -39,6 +39,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "antivirus_pill"
+    },
+    {
+      "name": "AntivirusPillFoodEaten",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antivirus_pill_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
