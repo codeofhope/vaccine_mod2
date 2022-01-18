@@ -1,5 +1,6 @@
 {
   "item.vaccinator_mod.needle": "Needle",
   "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
-  "itemGroup.tabvaccinated": "Vaccinator"
+  "itemGroup.tabvaccinated": "Vaccinator",
+  "item.vaccinator_mod.usable_needle": "Usable Needle"
 }

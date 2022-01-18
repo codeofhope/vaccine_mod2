@@ -55,6 +55,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "UsableNeedle",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usable_needle"
     }
   ],
   "variable_elements": [],
@@ -63,7 +71,8 @@
     "en_us": {
       "item.vaccinator_mod.needle": "Needle",
       "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
-      "itemGroup.tabvaccinated": "Vaccinator"
+      "itemGroup.tabvaccinated": "Vaccinator",
+      "item.vaccinator_mod.usable_needle": "Usable Needle"
     }
   },
   "foldersRoot": {
