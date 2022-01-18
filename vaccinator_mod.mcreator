@@ -1,0 +1,41 @@
+{
+  "mod_elements": [
+    {
+      "name": "Vaccinated",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vaccinated"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "itemGroup.tabvaccinated": "Vaccinator"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "vaccinator_mod",
+    "modName": "Vaccinator Mod",
+    "version": "1.0.0",
+    "author": "USER, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "modElementsPackage": "net.mcreator.vaccinatormod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100353117
+}
