@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "needle",
+    "texture": "nedle",
     "customModelName": "Normal",
     "name": "Needle",
     "rarity": "UNCOMMON",
