@@ -143,10 +143,10 @@
   ],
   "variable_elements": [
     {
-      "name": "IsContractedWithRad",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
+      "name": "ContractedVirus",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
     },
     {
       "name": "Researches",
@@ -161,7 +161,7 @@
       "files": [
         "a_hisa-mint-parfait"
       ],
-      "category": "neutral",
+      "category": "record",
       "subtitle": "Mint Parfait"
     }
   ],

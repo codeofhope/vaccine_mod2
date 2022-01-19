@@ -15,14 +15,9 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
-import net.minecraft.world.level.saveddata.SavedData;
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.Tag;
@@ -38,8 +33,6 @@ import java.util.function.Supplier;
 public class VaccinatorModModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		VaccinatorModMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new,
-				SavedDataSyncMessage::handler);
 		VaccinatorModMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new,
 				PlayerVariablesSyncMessage::handler);
 	}
@@ -81,140 +74,8 @@ public class VaccinatorModModVariables {
 					.orElse(new PlayerVariables()));
 			clone.Researches = original.Researches;
 			if (!event.isWasDeath()) {
+				clone.ContractedVirus = original.ContractedVirus;
 			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getPlayer().level.isClientSide()) {
-				SavedData mapdata = MapVariables.get(event.getPlayer().level);
-				SavedData worlddata = WorldVariables.get(event.getPlayer().level);
-				if (mapdata != null)
-					VaccinatorModMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()),
-							new SavedDataSyncMessage(0, mapdata));
-				if (worlddata != null)
-					VaccinatorModMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()),
-							new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getPlayer().level.isClientSide()) {
-				SavedData worlddata = WorldVariables.get(event.getPlayer().level);
-				if (worlddata != null)
-					VaccinatorModMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()),
-							new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-	}
-
-	public static class WorldVariables extends SavedData {
-		public static final String DATA_NAME = "vaccinator_mod_worldvars";
-
-		public static WorldVariables load(CompoundTag tag) {
-			WorldVariables data = new WorldVariables();
-			data.read(tag);
-			return data;
-		}
-
-		public void read(CompoundTag nbt) {
-		}
-
-		@Override
-		public CompoundTag save(CompoundTag nbt) {
-			return nbt;
-		}
-
-		public void syncData(LevelAccessor world) {
-			this.setDirty();
-			if (world instanceof Level level && !level.isClientSide())
-				VaccinatorModMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(level::dimension), new SavedDataSyncMessage(1, this));
-		}
-
-		static WorldVariables clientSide = new WorldVariables();
-
-		public static WorldVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevel level) {
-				return level.getDataStorage().computeIfAbsent(e -> WorldVariables.load(e), WorldVariables::new, DATA_NAME);
-			} else {
-				return clientSide;
-			}
-		}
-	}
-
-	public static class MapVariables extends SavedData {
-		public static final String DATA_NAME = "vaccinator_mod_mapvars";
-		public boolean IsContractedWithRad = false;
-
-		public static MapVariables load(CompoundTag tag) {
-			MapVariables data = new MapVariables();
-			data.read(tag);
-			return data;
-		}
-
-		public void read(CompoundTag nbt) {
-			IsContractedWithRad = nbt.getBoolean("IsContractedWithRad");
-		}
-
-		@Override
-		public CompoundTag save(CompoundTag nbt) {
-			nbt.putBoolean("IsContractedWithRad", IsContractedWithRad);
-			return nbt;
-		}
-
-		public void syncData(LevelAccessor world) {
-			this.setDirty();
-			if (world instanceof Level && !world.isClientSide())
-				VaccinatorModMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new SavedDataSyncMessage(0, this));
-		}
-
-		static MapVariables clientSide = new MapVariables();
-
-		public static MapVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevelAccessor serverLevelAcc) {
-				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(e -> MapVariables.load(e),
-						MapVariables::new, DATA_NAME);
-			} else {
-				return clientSide;
-			}
-		}
-	}
-
-	public static class SavedDataSyncMessage {
-		public int type;
-		public SavedData data;
-
-		public SavedDataSyncMessage(FriendlyByteBuf buffer) {
-			this.type = buffer.readInt();
-			this.data = this.type == 0 ? new MapVariables() : new WorldVariables();
-			if (this.data instanceof MapVariables _mapvars)
-				_mapvars.read(buffer.readNbt());
-			else if (this.data instanceof WorldVariables _worldvars)
-				_worldvars.read(buffer.readNbt());
-		}
-
-		public SavedDataSyncMessage(int type, SavedData data) {
-			this.type = type;
-			this.data = data;
-		}
-
-		public static void buffer(SavedDataSyncMessage message, FriendlyByteBuf buffer) {
-			buffer.writeInt(message.type);
-			buffer.writeNbt(message.data.save(new CompoundTag()));
-		}
-
-		public static void handler(SavedDataSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-			NetworkEvent.Context context = contextSupplier.get();
-			context.enqueueWork(() -> {
-				if (!context.getDirection().getReceptionSide().isServer()) {
-					if (message.type == 0)
-						MapVariables.clientSide = (MapVariables) message.data;
-					else
-						WorldVariables.clientSide = (WorldVariables) message.data;
-				}
-			});
-			context.setPacketHandled(true);
 		}
 	}
 
@@ -249,6 +110,7 @@ public class VaccinatorModModVariables {
 	}
 
 	public static class PlayerVariables {
+		public String ContractedVirus = "";
 		public double Researches = 0;
 
 		public void syncPlayerVariables(Entity entity) {
@@ -258,12 +120,14 @@ public class VaccinatorModModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
+			nbt.putString("ContractedVirus", ContractedVirus);
 			nbt.putDouble("Researches", Researches);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
+			ContractedVirus = nbt.getString("ContractedVirus");
 			Researches = nbt.getDouble("Researches");
 		}
 	}
@@ -290,6 +154,7 @@ public class VaccinatorModModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
+					variables.ContractedVirus = message.data.ContractedVirus;
 					variables.Researches = message.data.Researches;
 				}
 			});
