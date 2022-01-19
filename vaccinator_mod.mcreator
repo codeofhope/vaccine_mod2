@@ -123,6 +123,23 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hard_breath"
+    },
+    {
+      "name": "LackoxygenDisplayOverlay",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lackoxygen_display_overlay",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
