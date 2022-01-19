@@ -85,14 +85,6 @@
       }
     },
     {
-      "name": "Lackoxygen",
-      "type": "overlay",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lackoxygen"
-    },
-    {
       "name": "HardBreathOnEffectActiveTick",
       "type": "procedure",
       "sortid": 9,
@@ -115,23 +107,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hard_breath"
-    },
-    {
-      "name": "LackoxygenDisplayOverlay",
-      "type": "procedure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lackoxygen_display_overlay",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     },
     {
       "name": "HealMe",
@@ -173,7 +148,7 @@
       "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
       "itemGroup.tabvaccinated": "Vaccinator",
       "item.vaccinator_mod.repair_hammer": "Repair Hammer",
-      "effect.vaccinator_mod.hard_breath": "Oxygen Loss"
+      "effect.vaccinator_mod.hard_breath": "Hard to Breath"
     }
   },
   "foldersRoot": {

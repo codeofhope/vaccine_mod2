@@ -2,7 +2,6 @@
 package net.mcreator.vaccinatormod.potion;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
@@ -22,17 +21,6 @@ public class HardBreathMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		HardBreathOnEffectActiveTickProcedure.execute(entity);
-	}
-
-	@Override
-	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		super.removeAttributeModifiers(entity, attributeMap, amplifier);
 		Level world = entity.level;
 		double x = entity.getX();
 		double y = entity.getY();

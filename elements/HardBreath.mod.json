@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Oxygen Loss",
+    "effectName": "Hard to Breath",
     "icon": "pixil-frame-0_17.png",
     "color": {
       "value": -16737793,
@@ -14,9 +14,6 @@
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "onActiveTick": {
-      "name": "HardBreathOnEffectActiveTick"
-    },
-    "onExpired": {
       "name": "HardBreathOnEffectActiveTick"
     }
   }

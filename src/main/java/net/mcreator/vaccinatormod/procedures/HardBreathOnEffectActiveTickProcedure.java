@@ -6,8 +6,12 @@ public class HardBreathOnEffectActiveTickProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.isInWater()) {
+		boolean EffectApplied = false;
+		if (entity.isInWater() && EffectApplied == false) {
 			entity.setAirSupply(50);
+			EffectApplied = true;
+		} else if (!entity.isInWater() && EffectApplied == true) {
+			EffectApplied = false;
 		}
 	}
 }
