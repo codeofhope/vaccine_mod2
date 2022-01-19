@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class VaccinatorModModEntities {
 	private static final List<EntityType<?>> REGISTRY = new ArrayList<>();
 	public static final EntityType<InfectedEntity> INFECTED = register("infected",
-			EntityType.Builder.<InfectedEntity>of(InfectedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			EntityType.Builder.<InfectedEntity>of(InfectedEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(InfectedEntity::new).sized(0.6f, 1.95f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
