@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "command",
+  "definition": {
+    "commandName": "heal",
+    "permissionLevel": "2",
+    "onCommandExecuted": {
+      "name": "HealMeCommandExecuted"
+    }
+  }
+}

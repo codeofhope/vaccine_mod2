@@ -69,14 +69,6 @@
       "registry_name": "repair_hammer"
     },
     {
-      "name": "CreditOverlay",
-      "type": "overlay",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "credit_overlay"
-    },
-    {
       "name": "NeedleCollectBlood",
       "type": "procedure",
       "sortid": 8,
@@ -137,6 +129,30 @@
       "registry_name": "lackoxygen_display_overlay",
       "metadata": {
         "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealMe",
+      "type": "command",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_me"
+    },
+    {
+      "name": "HealMeCommandExecuted",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_me_command_executed",
+      "metadata": {
         "dependencies": [
           {
             "name": "entity",
