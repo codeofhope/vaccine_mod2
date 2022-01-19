@@ -217,6 +217,50 @@
           }
         ]
       }
+    },
+    {
+      "name": "RADLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rad_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RADRightClicked",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rad_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RAD",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rad"
     }
   ],
   "variable_elements": [
@@ -262,6 +306,7 @@
   "language_map": {
     "en_us": {
       "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
+      "item.vaccinator_mod.rad": "RAD Needle",
       "itemGroup.tabvaccinated": "Vaccinator",
       "item.vaccinator_mod.lacrata.desc": "Lacrata-Ncursor",
       "item.vaccinator_mod.infected_spawn_egg": "Infected Villager Spawn Egg",
