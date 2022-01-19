@@ -10,6 +10,7 @@ import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.effect.MobEffect;
 
+import net.mcreator.vaccinatormod.potion.HeadacheMobEffect;
 import net.mcreator.vaccinatormod.potion.HardBreathMobEffect;
 
 import java.util.List;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 public class VaccinatorModModMobEffects {
 	private static final List<MobEffect> REGISTRY = new ArrayList<>();
 	public static final MobEffect HARD_BREATH = register(new HardBreathMobEffect());
+	public static final MobEffect HEADACHE = register(new HeadacheMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

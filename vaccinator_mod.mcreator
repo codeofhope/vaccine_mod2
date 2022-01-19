@@ -261,6 +261,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "rad"
+    },
+    {
+      "name": "HeadacheOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "headache_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Headache",
+      "type": "potioneffect",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "headache"
     }
   ],
   "variable_elements": [
@@ -310,6 +334,7 @@
       "itemGroup.tabvaccinated": "Vaccinator",
       "item.vaccinator_mod.lacrata.desc": "Lacrata-Ncursor",
       "item.vaccinator_mod.infected_spawn_egg": "Infected Villager Spawn Egg",
+      "effect.vaccinator_mod.headache": "Sudden Headache",
       "subtitles.mintparfait2": "Mint Parfait",
       "effect.vaccinator_mod.hard_breath": "Hard to Breath",
       "item.vaccinator_mod.needle": "Creative Needles",
