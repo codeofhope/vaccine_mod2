@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nedle",
+    "texture": "repairhammer",
     "customModelName": "Normal",
-    "name": "Needle",
-    "rarity": "UNCOMMON",
+    "name": "Repair Hammer",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:Vaccinated"
     },
-    "stackSize": 1,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 0,
-    "toolType": 1.5,
-    "damageCount": 0,
+    "toolType": 5.0,
+    "damageCount": 400,
     "recipeRemainder": {
       "value": ""
     },
@@ -25,15 +25,13 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Just a needle."
+      "repair almost anything in vaccinator mod!",
+      "gives 16 iron when melted"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onEntityHitWith": {
-      "name": "NeedleRightClicked"
-    },
     "hasDispenseBehavior": false
   }
 }

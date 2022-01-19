@@ -10,7 +10,7 @@ import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.item.Item;
 
-import net.mcreator.vaccinatormod.item.UsableNeedleItem;
+import net.mcreator.vaccinatormod.item.RepairHammerItem;
 import net.mcreator.vaccinatormod.item.NeedleItem;
 import net.mcreator.vaccinatormod.item.AntivirusPillItem;
 
@@ -22,7 +22,7 @@ public class VaccinatorModModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
 	public static final Item NEEDLE = register(new NeedleItem());
 	public static final Item ANTIVIRUS_PILL = register(new AntivirusPillItem());
-	public static final Item USABLE_NEEDLE = register(new UsableNeedleItem());
+	public static final Item REPAIR_HAMMER = register(new RepairHammerItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

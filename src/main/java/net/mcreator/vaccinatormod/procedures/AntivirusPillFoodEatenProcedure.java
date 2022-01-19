@@ -23,6 +23,6 @@ public class AntivirusPillFoodEatenProcedure {
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 120, 255, (false), (true)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1200, 255, (false), (true)));
 	}
 }

@@ -28,6 +28,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       }
@@ -57,12 +61,12 @@
       }
     },
     {
-      "name": "UsableNeedle",
-      "type": "tool",
-      "sortid": 5,
+      "name": "RepairHammer",
+      "type": "item",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "usable_needle"
+      "registry_name": "repair_hammer"
     }
   ],
   "variable_elements": [],
@@ -72,7 +76,7 @@
       "item.vaccinator_mod.needle": "Needle",
       "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
       "itemGroup.tabvaccinated": "Vaccinator",
-      "item.vaccinator_mod.usable_needle": "Usable Needle"
+      "item.vaccinator_mod.repair_hammer": "Repair Hammer"
     }
   },
   "foldersRoot": {
