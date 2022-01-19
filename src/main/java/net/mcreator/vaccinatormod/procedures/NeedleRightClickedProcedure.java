@@ -8,12 +8,12 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.network.chat.TextComponent;
 
 public class NeedleRightClickedProcedure {
-	public static void execute(Entity entity, Entity sourceentity) {
-		if (entity == null || sourceentity == null)
+	public static void execute(Entity entity) {
+		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 1, (false), (false)));
-		if (sourceentity instanceof Player _player && !_player.level.isClientSide())
+		if (entity instanceof Player _player && !_player.level.isClientSide())
 			_player.displayClientMessage(new TextComponent(("You've collected " + entity.getDisplayName().getString() + "'s blood")), (true));
 	}
 }
