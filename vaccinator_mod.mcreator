@@ -147,14 +147,55 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lacrata"
+    },
+    {
+      "name": "InfectedPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infected_player_collides_with_this_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HideCondition",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hide_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Infected",
+      "type": "livingentity",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infected"
     }
   ],
   "variable_elements": [
     {
-      "name": "ContractedVirus",
-      "type": "string",
+      "name": "HasRAD",
+      "type": "logic",
       "scope": "player_lifetime",
-      "value": ""
+      "value": "false"
     },
     {
       "name": "Researches",
@@ -194,6 +235,7 @@
       "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
       "itemGroup.tabvaccinated": "Vaccinator",
       "item.vaccinator_mod.lacrata.desc": "Lacrata-Ncursor",
+      "item.vaccinator_mod.infected_spawn_egg": "Infected Villager Spawn Egg",
       "subtitles.mintparfait2": "Mint Parfait",
       "effect.vaccinator_mod.hard_breath": "Hard to Breath",
       "item.vaccinator_mod.needle": "Creative Needles",
@@ -202,7 +244,8 @@
       "subtitles.lacrata": "Lacrata playing",
       "item.vaccinator_mod.lacrata": "Lacrata",
       "item.vaccinator_mod.mint_parfait.desc": "for patients :)",
-      "item.vaccinator_mod.repair_hammer": "Repair Hammer"
+      "item.vaccinator_mod.repair_hammer": "Repair Hammer",
+      "entity.vaccinator_mod.infected": "Infected Villager"
     }
   },
   "foldersRoot": {

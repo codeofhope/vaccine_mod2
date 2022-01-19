@@ -74,7 +74,7 @@ public class VaccinatorModModVariables {
 					.orElse(new PlayerVariables()));
 			clone.Researches = original.Researches;
 			if (!event.isWasDeath()) {
-				clone.ContractedVirus = original.ContractedVirus;
+				clone.HasRAD = original.HasRAD;
 			}
 		}
 	}
@@ -110,7 +110,7 @@ public class VaccinatorModModVariables {
 	}
 
 	public static class PlayerVariables {
-		public String ContractedVirus = "";
+		public boolean HasRAD = false;
 		public double Researches = 0;
 
 		public void syncPlayerVariables(Entity entity) {
@@ -120,14 +120,14 @@ public class VaccinatorModModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putString("ContractedVirus", ContractedVirus);
+			nbt.putBoolean("HasRAD", HasRAD);
 			nbt.putDouble("Researches", Researches);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			ContractedVirus = nbt.getString("ContractedVirus");
+			HasRAD = nbt.getBoolean("HasRAD");
 			Researches = nbt.getDouble("Researches");
 		}
 	}
@@ -154,7 +154,7 @@ public class VaccinatorModModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
-					variables.ContractedVirus = message.data.ContractedVirus;
+					variables.HasRAD = message.data.HasRAD;
 					variables.Researches = message.data.Researches;
 				}
 			});

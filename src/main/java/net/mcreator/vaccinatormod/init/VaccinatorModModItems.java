@@ -8,7 +8,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
 import net.mcreator.vaccinatormod.item.RepairHammerItem;
 import net.mcreator.vaccinatormod.item.NeedleItem;
@@ -27,6 +29,9 @@ public class VaccinatorModModItems {
 	public static final Item REPAIR_HAMMER = register(new RepairHammerItem());
 	public static final Item MINT_PARFAIT = register(new MintParfaitItem());
 	public static final Item LACRATA = register(new LacrataItem());
+	public static final Item INFECTED = register(
+			new SpawnEggItem(VaccinatorModModEntities.INFECTED, -16711936, -3355444, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("infected_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
