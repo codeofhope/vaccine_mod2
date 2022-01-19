@@ -36,7 +36,7 @@ public class CreditOverlayOverlay {
 			double y = _y;
 			double z = _z;
 			if (true) {
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Vaccinator Mod v0.1", w + 30, h + 30, -1);
+				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Vaccinator Mod v0.1", posX + -213, posY + -120, -1);
 			}
 		}
 	}
