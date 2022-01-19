@@ -52,7 +52,7 @@ public class NeedleItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		NeedleRightClickedProcedure.execute(entity);
+		NeedleRightClickedProcedure.execute(entity, sourceentity);
 		return ar;
 	}
 

@@ -13,7 +13,7 @@ public class NeedleCollectBloodProcedure {
 			return;
 		if (sourceentity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 1, (false), (false)));
-		if (entity instanceof Player _player && !_player.level.isClientSide())
-			_player.displayClientMessage(new TextComponent(("You've collected " + sourceentity.getDisplayName().getString() + " blood.")), (false));
+		if (sourceentity instanceof Player _player && !_player.level.isClientSide())
+			_player.displayClientMessage(new TextComponent(("You've collected " + entity.getDisplayName().getString() + "'s blood.")), (true));
 	}
 }
