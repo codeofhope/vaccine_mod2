@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nedle",
+    "texture": "pixil-frame-0_14",
     "customModelName": "Normal",
-    "name": "Needle",
+    "name": "Creative Needles",
     "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Vaccinated"
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Just a needle."
+      "Creative Needle."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
