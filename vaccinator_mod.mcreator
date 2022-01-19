@@ -67,6 +67,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "repair_hammer"
+    },
+    {
+      "name": "CreditOverlay",
+      "type": "overlay",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "credit_overlay"
     }
   ],
   "variable_elements": [],
