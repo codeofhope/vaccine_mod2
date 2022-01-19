@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[37,)"
-license="Academic Free License v3.0"
+license="All Rights Reserved"
 
 [[mods]]
 modId="vaccinator_mod"
@@ -8,7 +8,7 @@ version="1.0.0"
 displayName="Vaccinator Mod"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="USER, MCreator"
+authors="TesterD, Ncursor"
 
 [[dependencies.vaccinator_mod]]
     modId="minecraft"
