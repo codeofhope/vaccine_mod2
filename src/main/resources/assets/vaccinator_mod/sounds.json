@@ -1,10 +1,20 @@
 {
   "mintparfait": {
-    "category": "neutral",
+    "category": "music",
     "subtitle": "subtitles.mintparfait",
     "sounds": [
       {
-        "name": "vaccinator_mod:a_hisa-mint-parfait",
+        "name": "vaccinator_mod:a_hisa-mint-parfait2",
+        "stream": true
+      }
+    ]
+  },
+  "mintparfait2": {
+    "category": "neutral",
+    "subtitle": "subtitles.mintparfait2",
+    "sounds": [
+      {
+        "name": "vaccinator_mod:a_hisa-mint-parfait2",
         "stream": false
       }
     ]

@@ -4,15 +4,15 @@
   "definition": {
     "texture": "mintparfaitdisk",
     "name": "Mint Parfait",
-    "description": "for patients :)",
+    "description": "Mint Parfait - a_hisa",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Vaccinated"
     },
     "music": {
-      "value": "CUSTOM:mintparfait"
+      "value": "CUSTOM:mintparfait2"
     },
     "specialInfo": [
-      "a_hisa"
+      "For patients :)"
     ],
     "hasGlow": false
   }

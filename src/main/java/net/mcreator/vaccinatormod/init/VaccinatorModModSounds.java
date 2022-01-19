@@ -19,6 +19,7 @@ public class VaccinatorModModSounds {
 	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
 	static {
 		REGISTRY.put(new ResourceLocation("vaccinator_mod", "mintparfait"), new SoundEvent(new ResourceLocation("vaccinator_mod", "mintparfait")));
+		REGISTRY.put(new ResourceLocation("vaccinator_mod", "mintparfait2"), new SoundEvent(new ResourceLocation("vaccinator_mod", "mintparfait2")));
 	}
 
 	@SubscribeEvent
