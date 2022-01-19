@@ -1,0 +1,19 @@
+{
+  "_fv": 24,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "lacrata",
+    "name": "Lacrata",
+    "description": "Lacrata-Ncursor",
+    "creativeTab": {
+      "value": "CUSTOM:Vaccinated"
+    },
+    "music": {
+      "value": "CUSTOM:lacrata"
+    },
+    "specialInfo": [
+      "A record"
+    ],
+    "hasGlow": true
+  }
+}
