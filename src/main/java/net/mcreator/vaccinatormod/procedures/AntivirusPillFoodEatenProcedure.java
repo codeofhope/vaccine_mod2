@@ -17,6 +17,6 @@ public class AntivirusPillFoodEatenProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1200, 255, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 800, 12, (false), (false)));
-		entity.setAirSupply(0);
+		entity.setAirSupply(80);
 	}
 }
