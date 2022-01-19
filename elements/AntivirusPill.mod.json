@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "pil",
+    "texture": "pixil-frame-0_15",
     "customModelName": "Normal",
     "name": "Anti-virus Pill",
     "rarity": "COMMON",

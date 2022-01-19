@@ -31,8 +31,14 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onEntityHitWith": {
+    "onRightClickedInAir": {
       "name": "NeedleRightClicked"
+    },
+    "onRightClickedOnBlock": {
+      "name": "NeedleRightClicked"
+    },
+    "onEntityHitWith": {
+      "name": "NeedleCollectBlood"
     },
     "hasDispenseBehavior": false
   }
