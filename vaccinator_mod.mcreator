@@ -91,6 +91,38 @@
           }
         ]
       }
+    },
+    {
+      "name": "Lackoxygen",
+      "type": "overlay",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lackoxygen"
+    },
+    {
+      "name": "HardBreathOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hard_breath_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HardBreath",
+      "type": "potioneffect",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hard_breath"
     }
   ],
   "variable_elements": [
@@ -107,7 +139,8 @@
       "item.vaccinator_mod.needle": "Creative Needles",
       "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
       "itemGroup.tabvaccinated": "Vaccinator",
-      "item.vaccinator_mod.repair_hammer": "Repair Hammer"
+      "item.vaccinator_mod.repair_hammer": "Repair Hammer",
+      "effect.vaccinator_mod.hard_breath": "Hard to Breath"
     }
   },
   "foldersRoot": {

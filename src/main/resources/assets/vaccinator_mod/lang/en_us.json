@@ -2,5 +2,6 @@
   "item.vaccinator_mod.needle": "Creative Needles",
   "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
   "itemGroup.tabvaccinated": "Vaccinator",
-  "item.vaccinator_mod.repair_hammer": "Repair Hammer"
+  "item.vaccinator_mod.repair_hammer": "Repair Hammer",
+  "effect.vaccinator_mod.hard_breath": "Hard to Breath"
 }
