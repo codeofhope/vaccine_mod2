@@ -171,6 +171,14 @@
       ],
       "category": "record",
       "subtitle": "Mint Parfait"
+    },
+    {
+      "name": "lacrata",
+      "files": [
+        "lacrata_-_ncursor"
+      ],
+      "category": "record",
+      "subtitle": "Lacrata playing"
     }
   ],
   "language_map": {
@@ -180,6 +188,7 @@
       "subtitles.mintparfait": "Mint Parfait",
       "item.vaccinator_mod.mint_parfait": "Mint Parfait",
       "itemGroup.tabvaccinated": "Vaccinator",
+      "subtitles.lacrata": "Lacrata playing",
       "item.vaccinator_mod.mint_parfait.desc": "Mint Parfait - a_hisa",
       "item.vaccinator_mod.repair_hammer": "Repair Hammer",
       "subtitles.mintparfait2": "Mint Parfait",
