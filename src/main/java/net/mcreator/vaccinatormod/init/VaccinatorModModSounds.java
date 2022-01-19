@@ -20,6 +20,7 @@ public class VaccinatorModModSounds {
 	static {
 		REGISTRY.put(new ResourceLocation("vaccinator_mod", "mintparfait"), new SoundEvent(new ResourceLocation("vaccinator_mod", "mintparfait")));
 		REGISTRY.put(new ResourceLocation("vaccinator_mod", "mintparfait2"), new SoundEvent(new ResourceLocation("vaccinator_mod", "mintparfait2")));
+		REGISTRY.put(new ResourceLocation("vaccinator_mod", "lacrata"), new SoundEvent(new ResourceLocation("vaccinator_mod", "lacrata")));
 	}
 
 	@SubscribeEvent

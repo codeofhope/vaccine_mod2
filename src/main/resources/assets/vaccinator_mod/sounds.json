@@ -18,5 +18,15 @@
         "stream": true
       }
     ]
+  },
+  "lacrata": {
+    "category": "record",
+    "subtitle": "subtitles.lacrata",
+    "sounds": [
+      {
+        "name": "vaccinator_mod:lacrata_-_ncursor",
+        "stream": true
+      }
+    ]
   }
 }
