@@ -77,11 +77,18 @@
       "registry_name": "credit_overlay"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "IsContractedWithRad",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.vaccinator_mod.needle": "Needle",
+      "item.vaccinator_mod.needle": "Creative Needles",
       "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
       "itemGroup.tabvaccinated": "Vaccinator",
       "item.vaccinator_mod.repair_hammer": "Repair Hammer"
@@ -95,9 +102,9 @@
     "modid": "vaccinator_mod",
     "modName": "Vaccinator Mod",
     "version": "1.0.0",
-    "author": "USER, MCreator",
+    "author": "TesterD, Ncursor",
     "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -105,6 +112,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.vaccinatormod",
     "lockBaseModFiles": false
   },
