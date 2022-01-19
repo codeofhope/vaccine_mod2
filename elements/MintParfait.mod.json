@@ -1,0 +1,19 @@
+{
+  "_fv": 24,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "mintparfaitdisk",
+    "name": "Mint Parfait",
+    "description": "for patients :)",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:mintparfait"
+    },
+    "specialInfo": [
+      "a_hisa"
+    ],
+    "hasGlow": false
+  }
+}

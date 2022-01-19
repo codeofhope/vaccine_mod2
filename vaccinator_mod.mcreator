@@ -156,6 +156,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "MintParfait",
+      "type": "musicdisc",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mint_parfait"
     }
   ],
   "variable_elements": [
@@ -172,12 +180,24 @@
       "value": "0"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "mintparfait",
+      "files": [
+        "a_hisa-mint-parfait"
+      ],
+      "category": "neutral",
+      "subtitle": "Mint Parfait"
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.vaccinator_mod.needle": "Creative Needles",
       "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
+      "subtitles.mintparfait": "Mint Parfait",
+      "item.vaccinator_mod.mint_parfait": "Mint Parfait",
       "itemGroup.tabvaccinated": "Vaccinator",
+      "item.vaccinator_mod.mint_parfait.desc": "for patients :)",
       "item.vaccinator_mod.repair_hammer": "Repair Hammer",
       "effect.vaccinator_mod.hard_breath": "Oxygen Loss"
     }

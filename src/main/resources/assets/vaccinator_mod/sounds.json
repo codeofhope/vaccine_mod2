@@ -1,0 +1,12 @@
+{
+  "mintparfait": {
+    "category": "neutral",
+    "subtitle": "subtitles.mintparfait",
+    "sounds": [
+      {
+        "name": "vaccinator_mod:a_hisa-mint-parfait",
+        "stream": false
+      }
+    ]
+  }
+}
