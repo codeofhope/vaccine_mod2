@@ -304,6 +304,26 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sealife_blood"
+    },
+    {
+      "name": "SealifeBloodItemInHandTick",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sealife_blood_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -372,6 +392,10 @@
     "children": [
       {
         "name": "Needle",
+        "children": []
+      },
+      {
+        "name": "Procedures",
         "children": []
       }
     ]
