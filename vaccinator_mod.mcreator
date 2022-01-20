@@ -150,7 +150,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mint_parfait",
-      "path": "~/Items"
+      "path": "~/Items/Music Disc"
     },
     {
       "name": "Lacrata",
@@ -159,7 +159,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lacrata",
-      "path": "~/Items"
+      "path": "~/Items/Music Disc"
     },
     {
       "name": "InfectedPlayerCollidesWithThisEntity",
@@ -417,6 +417,10 @@
         "children": [
           {
             "name": "Needles",
+            "children": []
+          },
+          {
+            "name": "Music Disc",
             "children": []
           }
         ]
