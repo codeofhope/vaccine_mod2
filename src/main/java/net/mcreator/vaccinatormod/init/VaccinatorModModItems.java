@@ -12,6 +12,7 @@ import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
+import net.mcreator.vaccinatormod.item.SealifeBloodItem;
 import net.mcreator.vaccinatormod.item.RepairHammerItem;
 import net.mcreator.vaccinatormod.item.RADItem;
 import net.mcreator.vaccinatormod.item.NeedleItem;
@@ -34,6 +35,7 @@ public class VaccinatorModModItems {
 			new SpawnEggItem(VaccinatorModModEntities.INFECTED, -16711936, -3355444, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("infected_spawn_egg"));
 	public static final Item RAD = register(new RADItem());
+	public static final Item SEALIFE_BLOOD = register(new SealifeBloodItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

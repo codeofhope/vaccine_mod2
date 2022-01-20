@@ -293,6 +293,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "needle_recipe"
+    },
+    {
+      "name": "SealifeBlood",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sealife_blood"
     }
   ],
   "variable_elements": [
@@ -352,6 +360,7 @@
       "item.vaccinator_mod.lacrata": "Lacrata",
       "item.vaccinator_mod.mint_parfait.desc": "for patients :)",
       "item.vaccinator_mod.repair_hammer": "Repair Hammer",
+      "item.vaccinator_mod.sealife_blood": "Sealife Blood",
       "entity.vaccinator_mod.infected": "Infected Villager"
     }
   },
