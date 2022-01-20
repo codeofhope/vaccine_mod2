@@ -14,7 +14,8 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "needle"
+      "registry_name": "needle",
+      "path": "~/Needle"
     },
     {
       "name": "NeedleRightClicked",
@@ -260,7 +261,8 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rad"
+      "registry_name": "rad",
+      "path": "~/Needle"
     },
     {
       "name": "HeadacheOnEffectActiveTick",
@@ -292,7 +294,8 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "needle_recipe"
+      "registry_name": "needle_recipe",
+      "path": "~/Needle"
     },
     {
       "name": "SealifeBlood",
@@ -366,7 +369,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Needle",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "vaccinator_mod",
