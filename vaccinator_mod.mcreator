@@ -6,7 +6,8 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vaccinated"
+      "registry_name": "vaccinated",
+      "path": "~/Miscs"
     },
     {
       "name": "Needle",
@@ -15,7 +16,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "needle",
-      "path": "~/Needle"
+      "path": "~/Items/Needles"
     },
     {
       "name": "NeedleRightClicked",
@@ -31,7 +32,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "AntivirusPill",
@@ -39,7 +41,8 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "antivirus_pill"
+      "registry_name": "antivirus_pill",
+      "path": "~/Items"
     },
     {
       "name": "AntivirusPillFoodEaten",
@@ -55,7 +58,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "RepairHammer",
@@ -63,7 +67,8 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "repair_hammer"
+      "registry_name": "repair_hammer",
+      "path": "~/Items"
     },
     {
       "name": "NeedleCollectBlood",
@@ -83,7 +88,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "HardBreathOnEffectActiveTick",
@@ -99,7 +105,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "HardBreath",
@@ -107,7 +114,8 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hard_breath"
+      "registry_name": "hard_breath",
+      "path": "~/Effects"
     },
     {
       "name": "HealMe",
@@ -115,7 +123,8 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "heal_me"
+      "registry_name": "heal_me",
+      "path": "~/Commands"
     },
     {
       "name": "HealMeCommandExecuted",
@@ -131,7 +140,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "MintParfait",
@@ -139,7 +149,8 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mint_parfait"
+      "registry_name": "mint_parfait",
+      "path": "~/Items"
     },
     {
       "name": "Lacrata",
@@ -147,7 +158,8 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lacrata"
+      "registry_name": "lacrata",
+      "path": "~/Items"
     },
     {
       "name": "InfectedPlayerCollidesWithThisEntity",
@@ -163,7 +175,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "HideCondition",
@@ -180,7 +193,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "Infected",
@@ -188,7 +202,8 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "infected"
+      "registry_name": "infected",
+      "path": "~/Entities"
     },
     {
       "name": "InfectedNaturalEntitySpawningCondition",
@@ -217,7 +232,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "RADLivingEntityIsHitWithItem",
@@ -237,7 +253,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "RADRightClicked",
@@ -253,7 +270,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "RAD",
@@ -262,7 +280,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "rad",
-      "path": "~/Needle"
+      "path": "~/Items/Needles"
     },
     {
       "name": "HeadacheOnEffectActiveTick",
@@ -278,7 +296,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "Headache",
@@ -286,7 +305,8 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "headache"
+      "registry_name": "headache",
+      "path": "~/Effects"
     },
     {
       "name": "NeedleRecipe",
@@ -295,7 +315,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "needle_recipe",
-      "path": "~/Needle"
+      "path": "~/Items/Needles"
     },
     {
       "name": "SealifeBlood",
@@ -303,7 +323,8 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sealife_blood"
+      "registry_name": "sealife_blood",
+      "path": "~/Items"
     },
     {
       "name": "SealifeBloodItemInHandTick",
@@ -323,7 +344,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -391,11 +413,32 @@
     "name": "~",
     "children": [
       {
-        "name": "Needle",
-        "children": []
+        "name": "Items",
+        "children": [
+          {
+            "name": "Needles",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Commands",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": []
+      },
+      {
+        "name": "Miscs",
         "children": []
       }
     ]
