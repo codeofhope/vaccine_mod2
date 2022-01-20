@@ -7,6 +7,8 @@ public class HeadacheOnEffectActiveTickProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.hurt(DamageSource.ANVIL, (float) 0.001);
+		double HeadacheLevel = 0;
+		entity.hurt(DamageSource.MAGIC, (float) HeadacheLevel);
+		HeadacheLevel = HeadacheLevel + 0.005;
 	}
 }
