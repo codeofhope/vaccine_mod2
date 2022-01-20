@@ -6,9 +6,9 @@
     "texture": "pixil-frame-0_19",
     "customModelName": "Normal",
     "name": "RAD Needle",
-    "rarity": "COMMON",
+    "rarity": "RARE",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Vaccinated"
     },
     "stackSize": 64,
     "enchantability": 0,

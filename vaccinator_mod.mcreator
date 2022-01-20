@@ -285,6 +285,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "headache"
+    },
+    {
+      "name": "NeedleRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "needle_recipe"
     }
   ],
   "variable_elements": [

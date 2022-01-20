@@ -7,7 +7,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
@@ -18,12 +17,13 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.vaccinatormod.procedures.RADRightClickedProcedure;
 import net.mcreator.vaccinatormod.procedures.RADLivingEntityIsHitWithItemProcedure;
+import net.mcreator.vaccinatormod.init.VaccinatorModModTabs;
 
 import java.util.List;
 
 public class RADItem extends Item {
 	public RADItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(VaccinatorModModTabs.TAB_VACCINATED).stacksTo(64).rarity(Rarity.RARE));
 		setRegistryName("rad");
 	}
 
