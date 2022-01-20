@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "sealife_blood",
+    "texture": "pixil-frame-0_20",
     "customModelName": "Normal",
     "name": "Sealife Blood",
     "rarity": "UNCOMMON",
