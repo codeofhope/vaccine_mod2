@@ -110,8 +110,8 @@ public class VaccinatorModModVariables {
 	}
 
 	public static class PlayerVariables {
-		public boolean HasRAD = false;
 		public double Researches = 0;
+		public boolean HasRAD = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -120,15 +120,15 @@ public class VaccinatorModModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putBoolean("HasRAD", HasRAD);
 			nbt.putDouble("Researches", Researches);
+			nbt.putBoolean("HasRAD", HasRAD);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			HasRAD = nbt.getBoolean("HasRAD");
 			Researches = nbt.getDouble("Researches");
+			HasRAD = nbt.getBoolean("HasRAD");
 		}
 	}
 
@@ -154,8 +154,8 @@ public class VaccinatorModModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
-					variables.HasRAD = message.data.HasRAD;
 					variables.Researches = message.data.Researches;
+					variables.HasRAD = message.data.HasRAD;
 				}
 			});
 			context.setPacketHandled(true);
