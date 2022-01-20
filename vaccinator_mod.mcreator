@@ -3,7 +3,7 @@
     {
       "name": "Vaccinated",
       "type": "tab",
-      "sortid": 1,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vaccinated",
@@ -12,7 +12,7 @@
     {
       "name": "Needle",
       "type": "item",
-      "sortid": 2,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "needle",
@@ -21,7 +21,7 @@
     {
       "name": "NeedleRightClicked",
       "type": "procedure",
-      "sortid": 3,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "needle_right_clicked",
@@ -38,7 +38,7 @@
     {
       "name": "AntivirusPill",
       "type": "food",
-      "sortid": 3,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antivirus_pill",
@@ -47,7 +47,7 @@
     {
       "name": "AntivirusPillFoodEaten",
       "type": "procedure",
-      "sortid": 4,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antivirus_pill_food_eaten",
@@ -64,7 +64,7 @@
     {
       "name": "RepairHammer",
       "type": "item",
-      "sortid": 6,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "repair_hammer",
@@ -73,7 +73,7 @@
     {
       "name": "NeedleCollectBlood",
       "type": "procedure",
-      "sortid": 8,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "needle_collect_blood",
@@ -94,7 +94,7 @@
     {
       "name": "HardBreathOnEffectActiveTick",
       "type": "procedure",
-      "sortid": 9,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hard_breath_on_effect_active_tick",
@@ -111,7 +111,7 @@
     {
       "name": "HardBreath",
       "type": "potioneffect",
-      "sortid": 9,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hard_breath",
@@ -120,7 +120,7 @@
     {
       "name": "HealMe",
       "type": "command",
-      "sortid": 11,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heal_me",
@@ -129,7 +129,7 @@
     {
       "name": "HealMeCommandExecuted",
       "type": "procedure",
-      "sortid": 12,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heal_me_command_executed",
@@ -146,7 +146,7 @@
     {
       "name": "MintParfait",
       "type": "musicdisc",
-      "sortid": 13,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mint_parfait",
@@ -155,7 +155,7 @@
     {
       "name": "Lacrata",
       "type": "musicdisc",
-      "sortid": 14,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lacrata",
@@ -164,7 +164,7 @@
     {
       "name": "InfectedPlayerCollidesWithThisEntity",
       "type": "procedure",
-      "sortid": 15,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infected_player_collides_with_this_entity",
@@ -181,7 +181,7 @@
     {
       "name": "HideCondition",
       "type": "procedure",
-      "sortid": 16,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hide_condition",
@@ -199,7 +199,7 @@
     {
       "name": "Infected",
       "type": "livingentity",
-      "sortid": 15,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infected",
@@ -208,7 +208,7 @@
     {
       "name": "InfectedNaturalEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 17,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infected_natural_entity_spawning_condition",
@@ -238,7 +238,7 @@
     {
       "name": "RADLivingEntityIsHitWithItem",
       "type": "procedure",
-      "sortid": 18,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rad_living_entity_is_hit_with_item",
@@ -259,7 +259,7 @@
     {
       "name": "RADRightClicked",
       "type": "procedure",
-      "sortid": 19,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rad_right_clicked",
@@ -276,7 +276,7 @@
     {
       "name": "RAD",
       "type": "item",
-      "sortid": 18,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rad",
@@ -285,7 +285,7 @@
     {
       "name": "HeadacheOnEffectActiveTick",
       "type": "procedure",
-      "sortid": 20,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "headache_on_effect_active_tick",
@@ -302,7 +302,7 @@
     {
       "name": "Headache",
       "type": "potioneffect",
-      "sortid": 15,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "headache",
@@ -311,7 +311,7 @@
     {
       "name": "NeedleRecipe",
       "type": "recipe",
-      "sortid": 21,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "needle_recipe",
@@ -320,7 +320,7 @@
     {
       "name": "SealifeBlood",
       "type": "item",
-      "sortid": 22,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sealife_blood",
@@ -329,7 +329,7 @@
     {
       "name": "SealifeBloodItemInHandTick",
       "type": "procedure",
-      "sortid": 23,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sealife_blood_item_in_hand_tick",
