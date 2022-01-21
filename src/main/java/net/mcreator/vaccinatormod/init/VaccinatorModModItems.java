@@ -27,15 +27,15 @@ import java.util.ArrayList;
 public class VaccinatorModModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
 	public static final Item NEEDLE = register(new NeedleItem());
-	public static final Item RAD = register(new RADItem());
-	public static final Item SEALIFE_BLOOD = register(new SealifeBloodItem());
 	public static final Item ANTIVIRUS_PILL = register(new AntivirusPillItem());
 	public static final Item REPAIR_HAMMER = register(new RepairHammerItem());
+	public static final Item MINT_PARFAIT = register(new MintParfaitItem());
+	public static final Item LACRATA = register(new LacrataItem());
 	public static final Item INFECTED = register(
 			new SpawnEggItem(VaccinatorModModEntities.INFECTED, -16711936, -3355444, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("infected_spawn_egg"));
-	public static final Item MINT_PARFAIT = register(new MintParfaitItem());
-	public static final Item LACRATA = register(new LacrataItem());
+	public static final Item RAD = register(new RADItem());
+	public static final Item SEALIFE_BLOOD = register(new SealifeBloodItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
