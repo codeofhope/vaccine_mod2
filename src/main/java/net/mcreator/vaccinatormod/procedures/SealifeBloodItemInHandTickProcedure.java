@@ -15,7 +15,7 @@ public class SealifeBloodItemInHandTickProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		while ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 1) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 1) {
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
