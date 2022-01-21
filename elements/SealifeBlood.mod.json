@@ -30,7 +30,10 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 1,
+    "inventoryStackSize": 64,
+    "onItemInUseTick": {
+      "name": "SealifeBloodItemInHandTick"
+    },
     "hasDispenseBehavior": false
   }
 }
