@@ -37,8 +37,7 @@ public class HeaterBlock extends Block
 
 			EntityBlock {
 	public HeaterBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(1f, 10f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(1f, 10f));
 		setRegistryName("heater");
 	}
 
@@ -122,7 +121,7 @@ public class HeaterBlock extends Block
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(VaccinatorModModBlocks.HEATER, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(VaccinatorModModBlocks.HEATER, renderType -> renderType == RenderType.cutout());
 	}
 
 }
