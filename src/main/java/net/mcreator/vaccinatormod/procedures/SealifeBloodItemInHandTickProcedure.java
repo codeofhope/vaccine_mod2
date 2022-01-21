@@ -16,8 +16,6 @@ public class SealifeBloodItemInHandTickProcedure {
 		if (entity == null)
 			return;
 		while ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 1) {
-			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Your is skin is infected by blood"), (true));
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -41,6 +39,8 @@ public class SealifeBloodItemInHandTickProcedure {
 				private void run() {
 					if (entity instanceof LivingEntity _entity)
 						_entity.hurt(new DamageSource("Due to blood infection").bypassArmor(), 1);
+					if (entity instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(new TextComponent("Your is skin is infected by blood"), (true));
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 20);
