@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_post",
-  "textures": {
-    "texture": "vaccinator_mod:blocks/stiched",
-    "particle": "vaccinator_mod:blocks/stiched"
-  }
-}

@@ -1,3 +1,6 @@
 {
-  "parent": "vaccinator_mod:block/heater_inventory"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "vaccinator_mod:items/heater"
+  }
 }
