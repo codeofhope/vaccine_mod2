@@ -276,7 +276,7 @@
     {
       "name": "RAD",
       "type": "item",
-      "sortid": 2,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rad",
@@ -371,7 +371,7 @@
           }
         ]
       },
-      "path": "~/Items"
+      "path": "~/Procedures"
     },
     {
       "name": "RADCell",
