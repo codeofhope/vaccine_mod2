@@ -7,6 +7,8 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.network.chat.TextComponent;
 
+import net.mcreator.vaccinatormod.network.VaccinatorModModVariables;
+
 public class AntivirusPillFoodEatenProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
@@ -18,5 +20,12 @@ public class AntivirusPillFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 800, 12, (false), (false)));
 		entity.setAirSupply(80);
+		{
+			boolean _setval = false;
+			entity.getCapability(VaccinatorModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.HasRAD = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

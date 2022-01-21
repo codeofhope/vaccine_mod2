@@ -31,7 +31,6 @@ import java.util.ArrayList;
 public class VaccinatorModModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
 	public static final Item NEEDLE = register(new NeedleItem());
-	public static final Item RAD = register(new RADItem());
 	public static final Item SEALIFE_BLOOD = register(new SealifeBloodItem());
 	public static final Item ANTIVIRUS_PILL = register(new AntivirusPillItem());
 	public static final Item REPAIR_HAMMER = register(new RepairHammerItem());
@@ -40,6 +39,7 @@ public class VaccinatorModModItems {
 					.setRegistryName("infected_spawn_egg"));
 	public static final Item MINT_PARFAIT = register(new MintParfaitItem());
 	public static final Item LACRATA = register(new LacrataItem());
+	public static final Item RAD = register(new RADItem());
 	public static final Item WRAP_ME_IN_PLASTIC = register(new WrapMeInPlasticItem());
 	public static final Item RAD_CELL = register(new RADCellItem());
 	public static final Item HEATER = register(VaccinatorModModBlocks.HEATER, VaccinatorModModTabs.TAB_VACCINATED);

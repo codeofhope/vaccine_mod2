@@ -1,15 +1,14 @@
 {
-  "group": "vaccinator_mod",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "G",
-    "I"
+    "0",
+    "1"
   ],
   "key": {
-    "G": {
+    "0": {
       "item": "minecraft:glass_bottle"
     },
-    "I": {
+    "1": {
       "item": "minecraft:iron_nugget"
     }
   },
