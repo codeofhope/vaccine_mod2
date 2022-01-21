@@ -390,6 +390,45 @@
       "locked_code": false,
       "registry_name": "rad_recipe",
       "path": "~/Miscs"
+    },
+    {
+      "name": "Heater",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heater",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "HeaterGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heater_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "HeaterGUI",
+      "type": "gui",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heater_gui",
+      "path": "~/Miscs"
     }
   ],
   "variable_elements": [
@@ -444,6 +483,7 @@
     "en_us": {
       "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
       "subtitles.wrapmeinplastic": "Wrap Me In Plastic - CHROMANCE",
+      "block.vaccinator_mod.heater": "Brewer",
       "item.vaccinator_mod.rad": "RAD Needle",
       "itemGroup.tabvaccinated": "Vaccinator",
       "item.vaccinator_mod.lacrata.desc": "Lacrata-Ncursor",

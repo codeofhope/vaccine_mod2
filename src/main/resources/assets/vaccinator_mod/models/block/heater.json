@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "vaccinator_mod:blocks/stiched",
+    "particle": "vaccinator_mod:blocks/stiched"
+  }
+}

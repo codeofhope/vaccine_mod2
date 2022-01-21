@@ -8,9 +8,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.vaccinatormod.item.WrapMeInPlasticItem;
 import net.mcreator.vaccinatormod.item.SealifeBloodItem;
@@ -40,10 +42,15 @@ public class VaccinatorModModItems {
 	public static final Item LACRATA = register(new LacrataItem());
 	public static final Item WRAP_ME_IN_PLASTIC = register(new WrapMeInPlasticItem());
 	public static final Item RAD_CELL = register(new RADCellItem());
+	public static final Item HEATER = register(VaccinatorModModBlocks.HEATER, VaccinatorModModTabs.TAB_VACCINATED);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
 		return item;
+	}
+
+	private static Item register(Block block, CreativeModeTab tab) {
+		return register(new BlockItem(block, new Item.Properties().tab(tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@SubscribeEvent
