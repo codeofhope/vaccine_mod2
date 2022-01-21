@@ -1,5 +1,6 @@
 {
   "item.vaccinator_mod.antivirus_pill": "Anti-virus Pill",
+  "subtitles.wrapmeinplastic": "Wrap Me In Plastic - CHROMANCE",
   "item.vaccinator_mod.rad": "RAD Needle",
   "itemGroup.tabvaccinated": "Vaccinator",
   "item.vaccinator_mod.lacrata.desc": "Lacrata-Ncursor",
@@ -8,8 +9,10 @@
   "subtitles.mintparfait2": "Mint Parfait",
   "effect.vaccinator_mod.hard_breath": "Hard to Breath",
   "item.vaccinator_mod.needle": "Creative Needles",
+  "item.vaccinator_mod.wrap_me_in_plastic.desc": "Wrap Me In Plastic",
   "subtitles.mintparfait": "Mint Parfait",
   "item.vaccinator_mod.mint_parfait": "Mint Parfait",
+  "item.vaccinator_mod.wrap_me_in_plastic": "Disc 4",
   "subtitles.lacrata": "Lacrata playing",
   "item.vaccinator_mod.lacrata": "Lacrata",
   "item.vaccinator_mod.mint_parfait.desc": "for patients :)",

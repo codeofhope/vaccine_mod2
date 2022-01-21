@@ -28,5 +28,15 @@
         "stream": true
       }
     ]
+  },
+  "wrapmeinplastic": {
+    "category": "neutral",
+    "subtitle": "subtitles.wrapmeinplastic",
+    "sounds": [
+      {
+        "name": "vaccinator_mod:y2mate.com-chromance-wrap-me-in-plastic-official-video-marcus-layton-mix",
+        "stream": false
+      }
+    ]
   }
 }

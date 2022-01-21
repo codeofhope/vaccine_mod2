@@ -1,0 +1,19 @@
+{
+  "_fv": 24,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "wrapmeinplasticdisc",
+    "name": "Disc 4",
+    "description": "Wrap Me In Plastic",
+    "creativeTab": {
+      "value": "CUSTOM:Vaccinated"
+    },
+    "music": {
+      "value": "CUSTOM:wrapmeinplastic"
+    },
+    "specialInfo": [
+      "by CHROMANCE"
+    ],
+    "hasGlow": false
+  }
+}
