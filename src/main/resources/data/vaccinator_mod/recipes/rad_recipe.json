@@ -1,0 +1,16 @@
+{
+  "group": "vaccinator_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vaccinator_mod:rad_cell"
+    },
+    {
+      "item": "vaccinator_mod:needle"
+    }
+  ],
+  "result": {
+    "item": "vaccinator_mod:rad",
+    "count": 1
+  }
+}

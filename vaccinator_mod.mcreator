@@ -381,6 +381,15 @@
       "locked_code": false,
       "registry_name": "rad_cell",
       "path": "~/Items"
+    },
+    {
+      "name": "RADRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rad_recipe",
+      "path": "~/Miscs"
     }
   ],
   "variable_elements": [
@@ -490,6 +499,10 @@
       },
       {
         "name": "Miscs",
+        "children": []
+      },
+      {
+        "name": "Blocks",
         "children": []
       }
     ]
