@@ -82,7 +82,7 @@ public class HeaterGUIMenu extends AbstractContainerMenu implements Supplier<Map
 		}
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 16, 35) {
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 97, 35) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

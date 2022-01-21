@@ -48,10 +48,10 @@ public class HeaterGUIScreen extends AbstractContainerScreen<HeaterGUIMenu> {
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("vaccinator_mod:textures/arrow.png"));
-		this.blit(ms, this.leftPos + 65, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 78, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("vaccinator_mod:textures/fire.png"));
-		this.blit(ms, this.leftPos + 42, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 78, this.topPos + 16, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
