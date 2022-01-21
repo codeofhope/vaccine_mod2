@@ -16,6 +16,7 @@ import net.mcreator.vaccinatormod.item.WrapMeInPlasticItem;
 import net.mcreator.vaccinatormod.item.SealifeBloodItem;
 import net.mcreator.vaccinatormod.item.RepairHammerItem;
 import net.mcreator.vaccinatormod.item.RADItem;
+import net.mcreator.vaccinatormod.item.RADCellItem;
 import net.mcreator.vaccinatormod.item.NeedleItem;
 import net.mcreator.vaccinatormod.item.MintParfaitItem;
 import net.mcreator.vaccinatormod.item.LacrataItem;
@@ -38,6 +39,7 @@ public class VaccinatorModModItems {
 	public static final Item MINT_PARFAIT = register(new MintParfaitItem());
 	public static final Item LACRATA = register(new LacrataItem());
 	public static final Item WRAP_ME_IN_PLASTIC = register(new WrapMeInPlasticItem());
+	public static final Item RAD_CELL = register(new RADCellItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
