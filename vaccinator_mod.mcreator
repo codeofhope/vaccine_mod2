@@ -355,6 +355,32 @@
       "locked_code": false,
       "registry_name": "wrap_me_in_plastic",
       "path": "~/Items/Music Disc"
+    },
+    {
+      "name": "RADCellItemInHandTick",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rad_cell_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RADCell",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rad_cell",
+      "path": "~/Items"
     }
   ],
   "variable_elements": [
@@ -416,6 +442,7 @@
       "effect.vaccinator_mod.headache": "Sudden Headache",
       "subtitles.mintparfait2": "Mint Parfait",
       "effect.vaccinator_mod.hard_breath": "Hard to Breath",
+      "item.vaccinator_mod.rad_cell": "RAD Cell",
       "item.vaccinator_mod.needle": "Creative Needles",
       "item.vaccinator_mod.wrap_me_in_plastic.desc": "Wrap Me In Plastic",
       "subtitles.mintparfait": "Mint Parfait",
