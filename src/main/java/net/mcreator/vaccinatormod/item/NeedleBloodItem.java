@@ -27,6 +27,6 @@ public class NeedleBloodItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Blood"));
+		list.add(new TextComponent("a needle containing blood."));
 	}
 }
