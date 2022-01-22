@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "vaccinator_mod:block/heater"
+    },
+    "facing=east": {
+      "model": "vaccinator_mod:block/heater",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "vaccinator_mod:block/heater",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vaccinator_mod:block/heater",
+      "y": 270
     }
   }
 }
