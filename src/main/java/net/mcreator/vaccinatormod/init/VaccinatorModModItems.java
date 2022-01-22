@@ -20,6 +20,7 @@ import net.mcreator.vaccinatormod.item.RepairHammerItem;
 import net.mcreator.vaccinatormod.item.RADItem;
 import net.mcreator.vaccinatormod.item.RADCellItem;
 import net.mcreator.vaccinatormod.item.NeedleItem;
+import net.mcreator.vaccinatormod.item.NeedleBloodItem;
 import net.mcreator.vaccinatormod.item.MintParfaitItem;
 import net.mcreator.vaccinatormod.item.LacrataItem;
 import net.mcreator.vaccinatormod.item.AntivirusPillItem;
@@ -43,6 +44,7 @@ public class VaccinatorModModItems {
 	public static final Item WRAP_ME_IN_PLASTIC = register(new WrapMeInPlasticItem());
 	public static final Item RAD_CELL = register(new RADCellItem());
 	public static final Item HEATER = register(VaccinatorModModBlocks.HEATER, VaccinatorModModTabs.TAB_VACCINATED);
+	public static final Item NEEDLE_BLOOD = register(new NeedleBloodItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

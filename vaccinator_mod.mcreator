@@ -462,6 +462,15 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "NeedleBlood",
+      "type": "item",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "needle_blood",
+      "path": "~/Items/Needles"
     }
   ],
   "variable_elements": [
@@ -525,6 +534,7 @@
       "subtitles.mintparfait": "Mint Parfait",
       "gamerule.immunity": "Immunity",
       "item.vaccinator_mod.lacrata": "Lacrata",
+      "item.vaccinator_mod.needle_blood": "Needle Blood",
       "item.vaccinator_mod.mint_parfait.desc": "for patients :)",
       "item.vaccinator_mod.sealife_blood": "Sealife Blood",
       "entity.vaccinator_mod.infected": "Infected Villager",
