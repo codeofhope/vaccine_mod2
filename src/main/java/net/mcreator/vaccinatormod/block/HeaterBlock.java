@@ -71,13 +71,13 @@ public class HeaterBlock extends Block
 		switch ((Direction) state.getValue(FACING)) {
 			case SOUTH :
 			default :
-				return box(0, 0, 0, 13, 16, 13).move(offset.x, offset.y, offset.z);
+				return box(3, 0, 3, 13, 16, 13).move(offset.x, offset.y, offset.z);
 			case NORTH :
-				return box(3, 0, 3, 16, 16, 16).move(offset.x, offset.y, offset.z);
+				return box(3, 0, 3, 13, 16, 13).move(offset.x, offset.y, offset.z);
 			case EAST :
-				return box(0, 0, 3, 13, 16, 16).move(offset.x, offset.y, offset.z);
+				return box(3, 0, 3, 13, 16, 13).move(offset.x, offset.y, offset.z);
 			case WEST :
-				return box(3, 0, 0, 16, 16, 13).move(offset.x, offset.y, offset.z);
+				return box(3, 0, 3, 13, 16, 13).move(offset.x, offset.y, offset.z);
 		}
 	}
 
