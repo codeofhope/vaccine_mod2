@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "pixil-frame-0_25",
     "customModelName": "Normal",
-    "name": "Needle Blood",
+    "name": "Blood Needle",
     "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:Vaccinated"
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Blood"
+      "a needle containing blood."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

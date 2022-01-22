@@ -572,11 +572,7 @@
         "children": []
       },
       {
-        "name": "Effects",
-        "children": []
-      },
-      {
-        "name": "Commands",
+        "name": "Miscs",
         "children": []
       },
       {
@@ -584,11 +580,15 @@
         "children": []
       },
       {
-        "name": "Miscs",
+        "name": "Blocks",
         "children": []
       },
       {
-        "name": "Blocks",
+        "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Commands",
         "children": []
       }
     ]
